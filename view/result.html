@@ -1,14 +1,14 @@
 
-{{#content "title"}}Joblint Results{{/content}}
-{{#content "description"}}Results for your job spec.{{/content}}
+{{#content "title"}}Call Check Results{{/content}}
+{{#content "description"}}Results for your announcement.{{/content}}
 
-<h1 class="lead">Joblint Results</h1>
+<h1 class="lead">Analysis Results</h1>
 
 
 {{#if isClean}}
     <h3 class="success box tab">Success</h3>
     <p class="results box spaced triangle-after triangle triangle-reversed">
-        No issues found with the job spec!
+        No issues found with the call for stories!
     </p>
 {{/if}}
 
@@ -17,7 +17,7 @@
     <h3 class="box tab">Overview</h3>
     <div class="box spaced bar-chart-container triangle triangle-after triangle-reversed">
         <p class="small">
-            This graph is a quick visualisation of how many issues your job spec has.
+            This graph is a quick visualisation of how many issues your announcement has.
         </p>
         <dl class="bar-chart">
             <dt>Culture Issues ({{result.failPoints.culture}})</dt>
@@ -90,4 +90,4 @@
 {{/result}}
 
 
-<a class="btn" href="/">Lint another job</a>
+<a class="btn" href="/">Analyze another announcement</a>
